@@ -1,0 +1,22 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hovoadmin1993/Website.git"
+  },
+  "author": "Hovo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hovoadmin1993/Website/issues"
+  },
+  "homepage": "https://github.com/Hovoadmin1993/Website#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

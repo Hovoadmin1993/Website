@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="shortcut icon" href="./img/w.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav_left">
+            <a href="#" class="logo">
+                <i class="fas fa-home"></i>
+                Logo
+            </a>
+            <div class="links">
+            <a href="#team" class="link">Team</a>
+            <a href="#works" class="link">Work</a>
+            <a href="#price" class="link">Price</a>
+            <a href="#contact" class="link">Contact</a>
+            <a href="#" class="drop">
+                Dropdown
+                <i class="fas fa-sort-down"></i>
+
+                <ul>
+                    <li>Link</li>
+                    <li>Link</li>
+                    <li>Link</li>
+                </ul>
+            </a>
+            </div>
+        </div>
+        <div class="nav_right">
+            <a href="#" class="search srch">
+                <i class="fas fa-search"></i>
+            </a>
+            <a href="#" class="search brs">
+                <i class="fas fa-bars" ></i>
+            </a>
+        </div>
+    </nav>
+
+    <header class="header" id="header">
+        <img src="./img/sailboat.jpg" alt="img">
+
+        <button id="myBtn">LEARN W3.CSS</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Oh snap! We just showed you a modal..</h2>
+              <p>Because we can <i class="far fa-smile"></i></p>
+               
+            </div>
+            <div class="modal-body">
+              <p>Cool huh? Ok, enough teasing around..</p>
+              <p>Go to our W3.CSS Tutorial to learn more!</p>
+            </div>
+            <div class="modal-footer">
+              <h3>Modal Footer</h3>
+            </div>
+          </div>
+        
+        </div>
+    </header>
+
+    <section class="team" id="team">
+        <h2>OUR TEAM</h2>
+        <p class="prg1">Meet the team - our office rats:</p>
+        <div class="grid1">
+            <div class="gridik">
+                <img src="./img/avatar.jpg" alt="av">
+                <h3>Johnny Walker</h3>
+                <p class="prg2">Web Designer</p>
+            </div>
+
+            <div class="gridik">
+                <img src="./img/avatar.jpg" alt="av">
+                <h3>Rebecca Flex</h3>
+                <p class="prg2">Support</p>
+            </div>
+
+            <div class="gridik">
+                <img src="./img/avatar.jpg" alt="av">
+                <h3>Jan Ringo</h3>
+                <p class="prg2">Boss man</p>
+            </div>
+
+            <div class="gridik">
+                <img src="./img/avatar.jpg" alt="av">
+                <h3>Kai Ringo</h3>
+                <p class="prg2">Fixer</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="works" id="works">
+        <div class="work_text">
+            <h2>Our Work</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <div class="work">
+            <img src="./img/snow.jpg" alt="snow">
+            <div class="imbot">
+                <h3>Customer 1</h3>
+                <ul>
+                    <li>Trade</li>
+                    <li>Blablabla</li>
+                    <li>Blablabla</li>
+                    <li>Blablabla</li>
+                    <li>Blablabla</li>
+                </ul>
+            </div>
+        </div>
+        <div class="work">
+            <img src="./img/lights.jpg" alt="lght">
+            <div class="imbot">
+                <h3>Customer 2</h3>
+                <ul>
+                    <li>Trade</li>
+                    <li>Blablabla</li>
+                    <li>Blablabla</li>
+                    <li>Blablabla</li>
+                    <li>Blablabla</li>
+                </ul>
+            </div>
+        </div>
+        <div class="work">
+            <img src="./img/mountains.jpg" alt="mont">
+            <div class="imbot">
+                <h3>Customer 3</h3>
+                <ul>
+                    <li>Trade</li>
+                    <li>Blablabla</li>
+                    <li>Blablabla</li>
+                    <li>Blablabla</li>
+                    <li>Blablabla</li>
+                </ul>
+            </div>
+        </div>
+        <button onclick="fixopn()">+</button>
+        <div class="fixd">
+            <h2 class="clos" onclick="fixcls()">
+                Close
+                <i class="fas fa-times"></i>
+            </h2>
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+                <li>Link 4</li>
+                <li>Link 5</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="price" id="price">
+        <h2>PRICING</h2>
+        <p class="prg1">Choose a pricing plan that fits your needs.</p>
+        <div class="grid2">
+            <div class="gridik2">
+                <ul>
+                    <li class="li_title">Basic</li>
+                    <li class="li_text"><b>10GB</b> Storage</li>
+                    <li class="li_text"><b>10</b> Emails</li>
+                    <li class="li_text"><b>10</b> Domains</li>
+                    <li class="li_text"><b>Endless</b> Support</li>
+                    <li class="li_big">
+                        <span class="li_span1">
+                            <b>$  10</b>
+                        </span>
+                        <span class="li_span2">
+                            per month
+                        </span>
+                    </li>
+                    <li class="li_but">
+                        <button>
+                            <i class="fas fa-check"></i>
+                            Sign Up
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="gridik2">
+                <ul>
+                    <li class="li_title2">Pro</li>
+                    <li class="li_text"><b>25GB</b> Storage</li>
+                    <li class="li_text"><b>25</b> Emails</li>
+                    <li class="li_text"><b>25</b> Domains</li>
+                    <li class="li_text"><b>Endless</b> Support</li>
+                    <li class="li_big">
+                        <span class="li_span1">
+                            <b>$  25</b>
+                        </span>
+                        <span class="li_span2">
+                            per month
+                        </span>
+                    </li>
+                    <li class="li_but">
+                        <button>
+                            <i class="fas fa-check"></i>
+                            Sign Up
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="gridik2">
+                <ul>
+                    <li class="li_title">Premium</li>
+                    <li class="li_text"><b>50GB</b> Storage</li>
+                    <li class="li_text"><b>50</b> Emails</li>
+                    <li class="li_text"><b>50</b> Domains</li>
+                    <li class="li_text"><b>Endless</b> Support</li>
+                    <li class="li_big">
+                        <span class="li_span1">
+                            <b>$  50</b>
+                        </span>
+                        <span class="li_span2">
+                            per month
+                        </span>
+                    </li>
+                    <li class="li_but">
+                        <button>
+                            <i class="fas fa-check"></i>
+                            Sign Up
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="cont_left">
+            <h2>Contact Us</h2>
+            <h3>Address</h3>
+            <p>Swing by for a cup of coffee, or whatever.</p>
+            <p>
+                <i class="fas fa-map-marker-alt"></i>
+                Chicago, US
+            </p>
+            <p>
+                <i class="fas fa-phone"></i>
+                +00 1515151515
+            </p>
+            <p>
+                <i class="far fa-envelope"></i>
+                test@test.com
+            </p>
+        </div>
+        <div class="cont_right">
+            <form action="#" method="get">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="Message">Message</label>
+                <input type="text" name="Message" id="Message" required>
+
+                <label class="cont">I Like it!
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="qrt">
+        <img src="./img/map.jpg" alt="map">
+    </section>
+
+    <footer class="footer">
+        <a href="#header" class="fa">
+            <i class="fas fa-angle-up"></i>
+        </a>
+        <p>Follow Us</p>
+        <p>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </p>
+        <p>Powered by w3.css</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
